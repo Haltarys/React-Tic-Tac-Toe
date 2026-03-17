@@ -28,8 +28,10 @@ export default defineConfig([
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    "rules": {
-      "@typescript-eslint/no-confusing-void-expression": "off",
-    }
+    rules: {
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@typescript-eslint/no-confusing-void-expression': 'off',
+      '@typescript-eslint/restrict-template-expressions': 'off',
+    },
   },
 ]);
